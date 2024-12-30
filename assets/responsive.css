@@ -1,18 +1,16 @@
 /*Responsive PC*/
-@media(min-width:1024px) {
+@media(min-width:1024px) {}
 
-}
 /*Responsive tablet*/
-@media(min-width:740px) and (max-width:1023){
-    
-}
+@media(min-width:740px) and (max-width:1023) {}
 
 /*Responsive mobie*/
-@media(max-width:739px){
-    #nav > li{
+@media(max-width:739px) {
+    #nav>li {
         display: block;
     }
-    .search-btn{
+
+    .search-btn {
         display: none;
     }
 }

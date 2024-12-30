@@ -1,17 +1,16 @@
-*{
+* {
     padding: 0s;
     margin: 0;
     box-sizing: border-box;
 }
 
-@media(max-width: 800px) {
-    
-}
+@media(max-width: 800px) {}
 
-html{
+html {
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -23,19 +22,24 @@ html{
     padding-left: 8px;
     padding-right: 8px;
 }
+
 .columns-third {
     width: 33.33333%;
 }
-.columns-half{
+
+.columns-half {
     width: 50%;
 }
-.columns-full{
+
+.columns-full {
     width: 100%;
 }
+
 .wrapper {
     height: 2000px;
 }
-.text-white{
+
+.text-white {
     color: #fff !important;
 }
 
@@ -49,68 +53,84 @@ html{
     z-index: 1;
     overflow: hidden;
 }
-#nav{
+
+#nav {
     padding: 0px;
     display: inline-block;
 }
 
-#nav, .subnav{
-    list-style-type: none ;
+#nav,
+.subnav {
+    list-style-type: none;
 }
-#nav li:hover .subnav{
+
+#nav li:hover .subnav {
     display: block;
 }
+
 #nav .subnav li:hover a,
-#nav >li:hover> a {
-    background-color: #ccc ;
+#nav>li:hover>a {
+    background-color: #ccc;
     color: #000;
 }
-#nav > li {
+
+#nav>li {
     display: inline-block;
 }
+
 #nav li {
     position: relative;
 }
-#nav >li> a{
+
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
-#nav li a{
+
+#nav li a {
 
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: block;
 }
+
 #nav .nav-arrow-down {
     font-size: 12px;
 }
+
 #nav .subnav {
     display: none;
     position: absolute;
     background-color: #fff;
     min-width: 160px;
-    top:100%;
+    top: 100%;
     padding: 0px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 
 #nav .subnav a {
     color: #333;
 }
-.mobile-menu-btn{
+
+.menu-icon {
+    padding: 15px;
+}
+
+.mobile-menu-btn {
     float: right;
-    padding: 0 28px;
     color: #fff;
     font-size: 20px;
     line-height: 46px;
     display: block;
 }
-.mobile-menu-btn :hover{
+
+.mobile-menu-btn :hover {
     background-color: #ccc;
     cursor: pointer;
 }
+
 .search-btn {
     float: right;
     padding: 0 28px;
@@ -118,26 +138,27 @@ html{
     font-size: 20px;
     line-height: 46px;
     display: inline;
-    
+
 }
-.search-btn:hover{
+
+.search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
-#header .search-icon{
 
+#header .search-icon {}
 
-}
 .slider {
     position: relative;
     min-height: 500px;
     margin-top: 46px;
-    padding-top:50% ;
+    padding-top: 50%;
     background: url('/assets/img/silder/silder1.webp') bottom center / cover no-repeat;
 
 
 }
-.text-center{
+
+.text-center {
     position: absolute;
     bottom: 0px;
     padding: 48px;
@@ -145,83 +166,93 @@ html{
     width: 100%;
     text-align: center;
 }
-.text-content{
+
+.text-content {
     font-weight: 100px;
     font-size: 32px;
     margin-bottom: 16px;
 }
-.text-desription{
+
+.text-desription {
     font-size: 20px;
 }
 
-.content {
+.content {}
 
-}
-.content-section{
+.content-section {
     width: 800px;
     max-width: 100%;
     padding: 64px 0 80px;
     margin-left: auto;
     margin-right: auto;
-    padding-left:16px ;
+    padding-left: 16px;
     padding-right: 16px;
 }
 
-.section-heading{
+.section-heading {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 4px;
 }
 
-.section-sub-heading{
+.section-sub-heading {
     text-align: center;
     margin: 20px;
     font-size: 16px;
     font-style: italic;
     opacity: 0.6;
 }
-.skill-list{
+
+.skill-list {
     margin-top: 48px;
     overflow: hidden;
 }
-.about-content{
+
+.about-content {
     font-size: 16px;
     font-style: italic;
     text-align: justify;
     line-height: 1.4;
 }
-.skill-name{
+
+.skill-name {
     font-size: 16px;
 }
-.skill-item{
+
+.skill-item {
     float: left;
     width: 33.33333%;
     text-align: center;
-    
+
 }
-.skill-img{
+
+.skill-img {
     margin-top: 16px;
     width: 154px;
-    border-radius:8px ;
+    border-radius: 8px;
 }
-.service-section{
+
+.service-section {
     background-color: #000;
 
 }
-.service-list{
+
+.service-list {
     background-color: #fff;
     margin-top: 40px;
     text-decoration: none;
     padding: 0;
 }
-.service-list .sold-out{
+
+.service-list .sold-out {
     background-color: #f44336;
     padding: 0 4px;
     color: #fff;
     margin-left: 16px;
 }
-.service-list .quantity-slot{
+
+.service-list .quantity-slot {
     /* float: right; */
     justify-content: flex-end;
     float: right;
@@ -234,102 +265,120 @@ html{
     height: 24px;
     line-height: 24px;
 }
-.service-list li{
+
+.service-list li {
     text-decoration: none;
     list-style-type: none;
     padding: 12px 16px;
     opacity: 0.6;
     border-bottom: 1px solid #ddd;
 }
-.service-list ul{
+
+.service-list ul {
     text-decoration: none;
     list-style-type: none;
 }
-.service-items{
+
+.service-items {
     margin-top: 40px;
     overflow: hidden;
     margin-left: -8px;
     margin-right: -8px;
     padding-bottom: 36px;
     cursor: pointer;
-    
+
 }
-.service-detail{
+
+.service-detail {
     float: left;
     width: 33.33333%;
     padding: 0 8px;
 
 }
-.service-img{
+
+.service-img {
     margin-top: 16px;
     width: 100%;
     height: 150px;
-    border-radius:8px 8px 0 0 ;
+    border-radius: 8px 8px 0 0;
     display: block;
-    
+
 }
-.service-img:hover{
+
+.service-img:hover {
     opacity: 0.9;
-    transform: scale(1.1) ;
-     
+    transform: scale(1.1);
+
 }
-.service-content{
+
+.service-content {
     background-color: #fff;
     padding: 16px;
     font-size: 16px;
     height: 180px;
 }
-.service-heading{
+
+.service-heading {
     font-size: 16px;
-    
-    
-    
+
+
+
 }
-.service-description{
+
+.service-description {
     font-weight: 500;
     margin-top: 15px;
     line-height: 1.4;
 }
-.btn-see{
+
+.btn-see {
     color: #fff;
     background-color: #000;
     text-decoration: none;
-    padding: 12px 16px ;
+    padding: 12px 16px;
     display: inline-block;
     margin-top: 12px;
     border: none;
     cursor: pointer;
 }
-.btn-see:hover{
+
+.btn-see:hover {
     color: #000;
     background-color: #ccc;
 }
-.contact-content{
+
+.contact-content {
     margin-top: 48px;
 }
-.contact-info{
+
+.contact-info {
     font-size: 16px;
     line-height: 1.4;
     opacity: 0.7;
 }
+
 .contact-info i {
     width: 30px;
     padding-right: 20px;
 
 }
-.contact-form{
+
+.contact-form {
     font-size: 16px;
 }
-.input-contact{
+
+.input-contact {
     overflow: hidden;
     margin-bottom: 8px;
 }
-.from-control{
+
+.from-control {
     padding: 8px;
     border: 1px solid #ccc;
     width: 100%;
 }
-.btn-send{
+
+.btn-send {
     margin-top: 12px;
     border: none;
     background-color: #000;
@@ -337,15 +386,18 @@ html{
     color: #fff;
     float: right;
 }
-.btn-send:hover{
+
+.btn-send:hover {
     color: #000;
     background-color: #ccc;
     cursor: pointer;
 }
-.contact-container{
+
+.contact-container {
     height: 600px;
 }
-.map-section img{
+
+.map-section img {
     width: 100%;
     height: 800px;
 }
@@ -355,33 +407,40 @@ html{
     text-align: center;
 
 }
-.socials-list{
+
+.socials-list {
     font-size: 40px;
 }
+
 .socials-list a {
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     padding: 8px;
 
 }
-.socials-list a:hover{
-    transform:  scale(1.1);
+
+.socials-list a:hover {
+    transform: scale(1.1);
     opacity: 0.5;
     cursor: pointer;
 
 }
-.copyright{
+
+.copyright {
     margin-top: 40px;
 }
-.copyright a{
-    color: rgba(0,0,0,0.6);
+
+.copyright a {
+    color: rgba(0, 0, 0, 0.6);
 }
-.copyright a :hover{
+
+.copyright a :hover {
     opacity: 0.5;
     cursor: pointer;
 
 }
-.modal-header{
+
+.modal-header {
     background: #000;
     height: 130px;
     color: #fff;
@@ -389,12 +448,14 @@ html{
     justify-content: center;
     align-items: center;
     font-size: 32px;
-    border-radius:4px 4px 0 0 ;
+    border-radius: 4px 4px 0 0;
 }
-.ti-comment-alt{
+
+.ti-comment-alt {
     margin-right: 12px;
 }
-.modal-close{
+
+.modal-close {
     position: absolute;
     color: #fff;
     right: 0;
@@ -403,20 +464,24 @@ html{
     cursor: pointer;
     opacity: 0.7;
 }
-.modal-close:hover{
+
+.modal-close:hover {
     background-color: red;
     opacity: 1;
 }
-.modal-body{
+
+.modal-body {
     padding: 16px;
 }
-.modal-label{
+
+.modal-label {
     display: block;
     font-size: 16px;
     margin-top: 12px;
 
 }
-.modal-input{
+
+.modal-input {
     border: 1px solid #ccc;
     width: 100%;
     padding: 10px;
@@ -424,7 +489,8 @@ html{
     margin-top: 10px;
     margin-bottom: 12px;
 }
-#modal-btn-summit{
+
+#modal-btn-summit {
     background-color: #ba1e1e;
     color: #fff;
     border: none;
@@ -437,50 +503,57 @@ html{
     margin-top: 16px;
     cursor: pointer;
 }
-#modal-btn-summit:hover{
+
+#modal-btn-summit:hover {
     background-color: #b22626;
     opacity: 1;
 }
-.modal-footer{
+
+.modal-footer {
     padding: 16px;
     text-align: center;
 }
-.modal-a{
+
+.modal-a {
     color: #2196F3;
 
 }
-.modal{
+
+.modal {
     position: fixed;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background:rgba(0,0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     display: none;
     align-items: center;
     justify-content: center;
 }
-.modal.open{
+
+.modal.open {
     display: flex;
 }
-.modal-container{
+
+.modal-container {
     background: #fff;
     width: 900px;
     max-width: calc(100%-32px);
     min-height: 200px;
     position: relative;
-    border-radius:4px ;
+    border-radius: 4px;
     animation: modalFadeIn ease 0.5s;
 
 }
-.modal-content{
-    
-}
+
+.modal-content {}
+
 @keyframes modalFadeIn {
-    from{
+    from {
         transform: translateY(-150px);
         opacity: 0.1;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
