@@ -19,7 +19,7 @@
                 <li><a href="#service">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="#more">
+                    <a href="#">
                         More <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
@@ -195,11 +195,16 @@
         var mobileMenu = document.getElementById('mobile-menu');
         var headerHeight = document.clientHeight;
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 4; i++) {
             var menuItem = menuItems[i];
 
             menuItem.onclick = function () {
-                header.style.height = null;
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+                if (!isParentMenu) {
+                    header.style.height = null;
+                } else {
+                    event.defaultPrevented();
+                }
             }
         }
 

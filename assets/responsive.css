@@ -2,15 +2,50 @@
 @media(min-width:1024px) {}
 
 /*Responsive tablet*/
-@media(min-width:740px) and (max-width:1023) {}
+@media(min-width:740px) and (max-width:1023) {
+
+
+    .search-btn {
+        display: none;
+    }
+}
 
 /*Responsive mobie*/
 @media(max-width:739px) {
+    #nav {
+        display: block;
+    }
+
     #nav>li {
         display: block;
+    }
+
+    #nav>li :first-child {
+        display: inline-block;
+    }
+
+    .header {
+        overflow: hidden;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 4px 40px;
     }
 
     .search-btn {
         display: none;
     }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+
+
 }
